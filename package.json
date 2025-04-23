@@ -1,14 +1,16 @@
 {
-  "name": "frontend",
+  "homepage": "https://alki45.github.io/Lab_schedule/",
+  "name": "labschedule",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && gh-pages -d dist",
+    "preview": "vite preview"
   },
-  "homepage": "https://Alki45.github.io/LAB_SCHEDULE",
+
   "dependencies": {
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
