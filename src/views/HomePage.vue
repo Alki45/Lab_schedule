@@ -111,8 +111,7 @@
 
         <h1 class="text-3xl text-white font-serif font-semibold ">Ready to Optimize Your Lab Resources?</h1>
         <p class=" text-xl text-white font-sans py-16">Start organizing your university's lab resources efficiently and eliminate scheduling conflicts with LabSync.</p>
-
-        <router-link class="text-xl text-blue font-serif font-semibold px-4 py-4 rounded-md bg-slate-400">Get Started</router-link>
+        <router-link to="/" class="text-xl text-blue font-serif font-semibold px-4 py-4 rounded-md bg-slate-400">Get Started</router-link>
 
 
 
