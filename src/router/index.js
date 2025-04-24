@@ -14,6 +14,7 @@ import Dashboard from '@/components/Dashboard/Dashboard.vue'
 
 const routes = [
   { path: '/', component: HomePage },
+  //{ path: '/Lab_schedule', component: HomePage },
   { path: '/dashboard', component: Dashboard },
   { path: '/about', component: AboutPage },
   { path: '/courses', component: CoursePage },

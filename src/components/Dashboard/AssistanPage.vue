@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-gray-300">
+    <div class="min-h-screen bg-gray-100">
       <!-- Top Navigation Buttons -->
       <div class="max-w-3xl mx-auto mb-6 flex justify-center gap-6">
         <button
@@ -38,11 +38,11 @@
         <div class="grid grid-cols-2  gap-10">
           <div>
             <label class="block font-medium text-gray-700">Assistant Name</label>
-            <input v-model="Assistant.name" type="text" class="input" placeholder="e.g. AI & ML" />
+            <input v-model="Assistant.name" type="text" class="input" placeholder="e.g. Abebe Kebede" />
           </div>
           <div>
             <label class="block font-medium text-gray-700">Department</label>
-            <input v-model="Assistant.department" type="text" class="input" placeholder="e.g. Software" />
+            <input v-model="Assistant.department" type="text" class="input" placeholder="e.g. , SE or CSE" />
           </div>
           <div>
             <label class="block font-medium text-gray-700">Phone Number</label>
@@ -58,7 +58,7 @@
           </div>
           <div>
             <label class="block font-medium text-gray-700">Assistant Employee ID</label>
-            <input v-model="Assistant.Employee_ID" type="text" class="input" placeholder="e.g. CSE101" />
+            <input v-model="Assistant.Employee_ID" type="text" class="input" placeholder="e.g. /00013/17" />
           </div>
           <!-- <div>
             <label class="block font-medium text-gray-700">Lecture Hours</label>
@@ -85,33 +85,33 @@
         </div>
       </div>
   
-      <!-- Manage Assistant Section -->
-      <div v-if="currentView === 'manage'" class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-10">
-        <h2 class="text-2xl font-bold text-emerald-700 mb-4 text-center">Manage Assistant</h2>
-        <p class="text-center text-gray-600">Coming soon: edit, delete, and organize Assistant!</p>
-      <h1>Changes:
-  Top Navigation Buttons:
-  
-  Buttons are now styled similarly to the sidebar in the AdminDashboard.vue.
-  
-  Added hover effects and smooth transitions with background color changes when a button is selected.
-  
-  Removal of the Assistant Box:
-  
-  The Assistant form is now displayed directly without the box background, keeping it simple and aligned with the Dashboard style.
-  
-  The buttons for "Add Assistant", "All Assistant", and "Manage Assistant" are styled with rounded corners, shadows, and hover effects.
-  
-  Responsive Grid:
-  
-  The form fields are organized in a grid format to maintain good alignment and make the form responsive.
-  
-  Form and Button Styles:
-  
-  Inputs and buttons follow the same style pattern as the sidebar, with smooth hover effects and transitions.
-  
-  This layout should match the style you're aiming for and provide a consistent, attractive UI throughout your application.</h1>
-      </div>
+              <!-- Manage Assistant Section -->
+              <div v-if="currentView === 'manage'" class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-10">
+                <h2 class="text-2xl font-bold text-emerald-700 mb-4 text-center">Manage Assistant</h2>
+                <p class="text-center text-gray-600">Coming soon: edit, delete, and organize Assistant!</p>
+              <h1>Changes:
+                      Top Navigation Buttons:
+                      
+                      Buttons are now styled similarly to the sidebar in the AdminDashboard.vue.
+                      
+                      Added hover effects and smooth transitions with background color changes when a button is selected.
+                      
+                      Removal of the Assistant Box:
+                      
+                      The Assistant form is now displayed directly without the box background, keeping it simple and aligned with the Dashboard style.
+                      
+                      The buttons for "Add Assistant", "All Assistant", and "Manage Assistant" are styled with rounded corners, shadows, and hover effects.
+                      
+                      Responsive Grid:
+                      
+                      The form fields are organized in a grid format to maintain good alignment and make the form responsive.
+                      
+                      Form and Button Styles:
+                      
+                      Inputs and buttons follow the same style pattern as the sidebar, with smooth hover effects and transitions.
+                      
+                      This layout should match the style you're aiming for and provide a consistent, attractive UI throughout your application.</h1>
+              </div>
   
       <!-- All Assistant Section -->
       <div v-if="currentView === 'all'" class="max-w-3xl mx-auto bg-white shadow-lg rounded-xl p-10">
